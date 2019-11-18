@@ -1,5 +1,6 @@
 /catalog/view/theme/modern/template/checkout/simplecheckout_payment.tpl
 
 /catalog/view/theme/modern/template/extension/module/credit_simple_ii.tpl
+/catalog/view/theme/modern/template/extension/module/credit_simple_pp.tpl
 
 /catalog/view/theme/modern/template/extension/payment/monobank_method.tpl
