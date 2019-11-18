@@ -6,7 +6,7 @@
 
 				<div class="col-md-4" style="text-align: center;">
 					<div class="row" style="text-align: center; padding-top: 25px;">
-						<div class="form-group">			
+						<div class="form-group">	
 							<select id="termInput" name="partsCount_ii" style="margin: 0 auto !important" class="form-control">
 							<?php for($i=1;$i<=$partsCounts;$i++){ ?>
 								<option value="<?php echo $i; ?>"><?php echo $i; ?></option>
@@ -23,7 +23,7 @@
 							<div class="row" style="padding-top: 25px;">
 							<?php // echo $text_mounth; ?>
 								<span class="privat-price">
-									<span id="ipResultValue">0</span>
+									<span id="ipResultValue">0</span><br>
 									<!--<span class="result-additional-data-phys"></span>-->
 								</span>
 								<span>грн/мсц</span>

@@ -156,14 +156,17 @@
 
 <script>
 
-    $('input[name="payment_method"]').on('click',  function (e) {
-      let txt = $(this).val();
-        if($(this).attr("count") < 5 ){
-            setTimeout( () => {$('.text-way-payment').text(txt)}, 650)
-        }else{
-            setTimeout( () => {$('.text-bank-payment').text(txt)}, 650)
-        }
+$('body').on('click', select_payment_txt());
 
-        console.dir($('#mono_panel')[0].innerHTML);
-    });
+
+function select_payment_txt() {
+       let txt = $('input[name="payment_method"]:checked').val();
+       
+        if($('input[name="payment_method"]:checked').attr("count") < 5 ){
+            $('.text-way-payment').text(txt)
+        }else{
+            $('.text-bank-payment').text(txt)
+        }
+}
+
 </script>

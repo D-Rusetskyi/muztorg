@@ -1,19 +1,39 @@
 <form id="privatbank_paymentparts_pp_checkout" style=" display: none;">
-
-
-
     <!--<span class="form-element" id="paymentsCount2cart"></span>, на-->
-    <select id="termInput2" name="partsCount_pp" style="width:auto;" class="form-control">
-      <?php for($i=1;$i<=$partsCounts;$i++){ ?>
-      <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-      <?php } ?>
-    </select> <?php echo $text_mounth; ?> по
-    <span id="ppResultValue">0</span>
-    <span class="result-additional-data-phys"></span>
-    <input type="hidden" pattern="\d*" id="priceInput2" value="<?php echo $total; ?>">
-  
+	<div id="mono_panel" class="panel panel-default" style="min-width: 415px;">
+		<div class="panel-body">
+			<div class="row">
 
+				<div class="col-md-4" style="text-align: center;">
+					<div class="row" style="text-align: center; padding-top: 25px;">
+						<div class="form-group">
+                            <select id="termInput2" name="partsCount_pp"  class="form-control">
+                            <?php for($i=1;$i<=$partsCounts;$i++){ ?>
+                            <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
+                            <?php } ?>
+                            <input type="hidden" pattern="\d*" id="priceInput2" value="<?php echo $total; ?>">
+						</div>
+					</div>
+				</div>  
 
+				<div class="col-md-4" style="text-align: center;">
+					<div class="row">
+						<div class="col-md-12" style="text-align: center;">
+							<div class="row" style="padding-top: 25px;">
+							<?php // echo $text_mounth; ?>
+								<span class="privat-price">
+									<span id="ppResultValue">0</span><br>
+									<!--<span class="result-additional-data-phys"></span>-->
+								</span>
+								<span>грн/мсц</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
 </form>
 
 
