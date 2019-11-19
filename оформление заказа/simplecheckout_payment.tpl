@@ -101,6 +101,7 @@
                             name="payment_method"
                             value="<?php echo $payment_method['code']; ?>" 
                             count="<?php echo $payment_i; ?>"
+                            name-text="<?php echo $payment_method['name']; ?>"
                             <?php echo !empty($payment_method['dummy']) ? 'disabled="disabled"' : '' ?>
                             <?php echo !empty($payment_method['dummy']) ? 'data-dummy="true"' : '' ?>
                             id="<?php echo $payment_method['code']; ?>" <?php if ($payment_method['code'] == $code) { ?>checked="checked"<?php } ?> 
@@ -160,7 +161,7 @@ $('body').on('click', select_payment_txt());
 
 
 function select_payment_txt() {
-       let txt = $('input[name="payment_method"]:checked').val();
+       let txt = $('input[name="payment_method"]:checked').attr("name-text");
        
         if($('input[name="payment_method"]:checked').attr("count") < 5 ){
             $('.text-way-payment').text(txt)

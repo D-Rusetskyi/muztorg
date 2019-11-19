@@ -1,6 +1,9 @@
 /catalog/view/theme/modern/template/checkout/simplecheckout_payment.tpl
 
-/catalog/view/theme/modern/template/extension/module/credit_simple_ii.tpl
-/catalog/view/theme/modern/template/extension/module/credit_simple_pp.tpl
+/catalog/view/theme/modern/template/extension/module/credit_simple_ii.tpl, credit_simple_pp.tpl
 
 /catalog/view/theme/modern/template/extension/payment/monobank_method.tpl
+
+/catalog/language/ru-ru/extension/payment/ liqpay_checkout.php, privatbank_paymentparts_pp.php
+
+/catalog/model/extension/payment/ privatbank_paymentparts_pp.php
