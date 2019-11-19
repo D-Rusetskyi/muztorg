@@ -4,6 +4,8 @@
 
 /catalog/view/theme/modern/template/extension/payment/monobank_method.tpl
 
-/catalog/language/ru-ru/extension/payment/ liqpay_checkout.php, privatbank_paymentparts_pp.php
+/catalog/language/ru-ru/extension/payment/ liqpay_checkout.php
 
-/catalog/model/extension/payment/ privatbank_paymentparts_pp.php
+/catalog/language/uk-ua/extension/payment/ privatbank_paymentparts_pp.php, privatbank_paymentparts_ii.php, portmonepay.php, cod.php, cod_bank.php, monobank.php
+
+/catalog/model/extension/payment/ privatbank_paymentparts_pp.php, privatbank_paymentparts_ii.php, cod.php, liqpay_checkout.php, portmonepay.php, cod_bank.php, monobank.php
